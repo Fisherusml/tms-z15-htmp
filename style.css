@@ -4,11 +4,13 @@
     text-decoration: 0;
     box-sizing: border-box;
 
-    border: 1px black solid;
+    /* border: 1px black solid; */
 }
 
 body, button{
-    font-family: Open Sans;
+    font-family:sans-serif;
+    font-style: normal;
+    color: #48555B;
 }
 
 header, main, footer{
@@ -16,10 +18,17 @@ header, main, footer{
     margin: 0 auto;
 }
 
-header > div{
+.header{
     height: 768px;
     background-image: url(img/head_bg.jpg);
+
 }
+
+.header *{
+    text-align: center;
+    margin: 0;
+}
+
 
 footer > div{
     height: 299px;
@@ -34,8 +43,30 @@ ul {
     color: white;
 }
 
+.mmenu{
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 220px;
+    border: 1px solid #E6E6E6;
+}
+
 .mmenu ul{
+    text-transform: uppercase;
+    display: flex;
+    text-align: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    align-items: stretch;
+}
+
+.mmenu li{
     display: inline;
+    margin: 25px 30px;
+}
+
+li.active{
+    color: #00A4E5;
 }
 
 .btn {
