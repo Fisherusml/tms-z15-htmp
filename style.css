@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: 0;
+    box-sizing: border-box;
+}
+
+
+.btn {
+    background: #00A4E5;
+    color: #ffffff;
+    width: 150px;
+    height: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 13px;
+    line-height: 18px;
+    display: block;
+    text-align: center;
+    padding-top: 11px;
+    
+}
+
