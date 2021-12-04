@@ -18,10 +18,14 @@ header, main, footer{
     margin: 0 auto;
 }
 
+section > div, footer > div{
+    padding: 0 250px;
+}
+
 .header{
     height: 768px;
     background-image: url(img/head_bg.jpg);
-
+    color: white;
 }
 
 .header *{
@@ -38,8 +42,13 @@ ul {
     list-style-type: none;
 }
 
-.blk-wht{
-    background-color: black;
+.blk-wht1{
+    background: #171819;
+    color: white;
+}
+
+.blk-wht2{
+    background: #141A20;
     color: white;
 }
 
@@ -84,4 +93,52 @@ li.active{
     padding-bottom: 11px;
     border: none;
 }
+
+.articles{
+    display: flex;
+    
+}
+
+article{
+    border: 1px solid #E6E6E6;
+}
+
+.icons{
+    height: 75px;
+    width: 71px;
+    background-repeat: no-repeat;
+}
+
+.ic1{
+    background-image: url(img/icon_1.png);
+}
+
+.ic2{
+    background-image: url(img/icon_2.png);
+}
+
+.ic3{
+    background-image: url(img/icon_3.png);
+}
+
+.newsletter{
+    color: white;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.signup{
+    margin: 0 auto;
+    display: flex;
+    align-items: stretch;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.signup *{
+    /* display: inline; */
+  
+}
+
 
