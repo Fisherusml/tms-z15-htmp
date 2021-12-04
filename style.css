@@ -3,8 +3,40 @@
     padding: 0;
     text-decoration: 0;
     box-sizing: border-box;
+
+    border: 1px black solid;
 }
 
+body, button{
+    font-family: Open Sans;
+}
+
+header, main, footer{
+    width: 1440px;
+    margin: 0 auto;
+}
+
+header > div{
+    height: 768px;
+    background-image: url(img/head_bg.jpg);
+}
+
+footer > div{
+    height: 299px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.blk-wht{
+    background-color: black;
+    color: white;
+}
+
+.mmenu ul{
+    display: inline;
+}
 
 .btn {
     background: #00A4E5;
@@ -18,6 +50,7 @@
     display: block;
     text-align: center;
     padding-top: 11px;
-    
+    padding-bottom: 11px;
+    border: none;
 }
 
