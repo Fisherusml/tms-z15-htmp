@@ -8,7 +8,7 @@
 }
 
 body, button{
-    font-family:sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-style: normal;
     color: #48555B;
 }
@@ -67,11 +67,13 @@ ul {
     flex-wrap: nowrap;
     justify-content: flex-end;
     align-items: stretch;
+    font-size: 13px;
+    font-weight: 600;
 }
 
 .mmenu li{
     display: inline;
-    margin: 25px 30px;
+    margin: 25px;
 }
 
 li.active{
@@ -94,14 +96,69 @@ li.active{
     border: none;
 }
 
-.articles{
-    display: flex;
-    
+.ab-title h2{
+    text-align: center;
 }
 
-article{
-    border: 1px solid #E6E6E6;
+.about {
+    display: flex;
 }
+
+.about > div{
+    width: 50%;
+    height: auto;
+}
+
+.ab-text{
+    padding-right: 77px;
+}
+
+.ab-art{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.ab-art p {
+    color: white;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 29px;
+    margin: 15px;
+}
+
+.ab1, .ab2, .ab3 {
+    height: 224px;
+    width: 140px;
+}
+
+.ab1{
+    background-image: url(img/ar1.jpg);
+}
+
+.ab2{
+    background-image: url(img/ar2.jpg);
+}
+
+.ab3{
+    background-image: url(img/ar3.jpg);
+}
+
+.articles{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.articles article{
+    border: 1px solid #E6E6E6;
+    height: 330px;
+    width: 295px;
+    padding: 39px 23px;
+}
+
+
 
 .icons{
     height: 75px;
@@ -136,9 +193,30 @@ article{
     align-content: center;
 }
 
-.signup *{
-    /* display: inline; */
-  
+.signup > p {
+    font-size: 22px;
+    font-weight:bold;
+    padding: 0 70px;
+    line-height: 40px;
 }
+
+.signup input {
+    width: 250px;
+    padding-left: 16px;
+    font-size: 14px;
+}
+
+.footer {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-content: center;
+    align-items: stretch;
+}
+
+.footer > * {
+    margin: 10px;
+}
+
 
 
