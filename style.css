@@ -7,6 +7,10 @@
     /* border: 1px black solid; */
 }
 
+body{
+    background-color: #E5E5E5;
+}
+
 body, button{
     font-family: 'Open Sans', sans-serif;
     font-style: normal;
@@ -16,6 +20,7 @@ body, button{
 header, main, footer{
     width: 1440px;
     margin: 0 auto;
+    background-color: white;
 }
 
 section > div, footer > div{
@@ -26,17 +31,50 @@ section > div, footer > div{
     height: 768px;
     background-image: url(img/head_bg.jpg);
     color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .header *{
     text-align: center;
     margin: 0;
+    
 }
 
-
-footer > div{
-    height: 299px;
+.header p{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
 }
+
+.logo{
+    padding-top: 30px;
+}
+
+.header h1{
+    font-size: 60px;
+    line-height: 70px;
+    font-family: 'Bebas Neue', cursive;
+    text-transform: uppercase;
+    letter-spacing: 5.70937px;
+}
+
+.scr-dwn{
+    padding-bottom: 71px;
+}
+.scr-dwn a{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 11px;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 3.7px;
+    
+}
+
 
 ul {
     list-style-type: none;
@@ -54,29 +92,40 @@ ul {
 
 .mmenu{
     display: flex;
-    justify-content: flex-end;
-    padding-right: 220px;
+    justify-content: space-between;
+    align-items: stretch;
+    /* padding-right: 220px; */
     border: 1px solid #E6E6E6;
+    height: 65px;
+}
+
+.mmenu > nav{
+    width: 40%;
+}
+
+.mmenu img{
+    margin-top: 20px;
 }
 
 .mmenu ul{
     text-transform: uppercase;
     display: flex;
-    text-align: center;
     flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: stretch;
-    font-size: 13px;
+    font-size: 12px;
+    font-size: 12px;
     font-weight: 600;
+    height: 100%;
 }
 
 .mmenu li{
     display: inline;
-    margin: 25px;
+    margin-top: 22px;
 }
 
-li.active{
+li.active, span{
     color: #00A4E5;
 }
 
@@ -85,10 +134,12 @@ li.active{
     color: #ffffff;
     width: 150px;
     height: 40px;
-    font-weight: bold;
+    font-weight: 700;
+    
     text-transform: uppercase;
     font-size: 13px;
     line-height: 18px;
+    letter-spacing: 0.5px;
     display: block;
     text-align: center;
     padding-top: 11px;
@@ -96,12 +147,39 @@ li.active{
     border: none;
 }
 
+.ab-title{
+    padding: 52px 0;
+}
+
+h2 {
+    
+    font-weight: bold;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 2.3px;
+    line-height: 25px;
+    margin-bottom: 10px;
+}
+
 .ab-title h2{
     text-align: center;
 }
 
+hr{
+    width: 50px;
+    border: 2px solid #00A4E5;
+   
+    background-color: #00A4E5;
+}
+
+.ab-title hr{
+    margin: 0 auto;
+}
+
+
 .about {
     display: flex;
+    padding-bottom: 118px;
 }
 
 .about > div{
@@ -111,6 +189,20 @@ li.active{
 
 .ab-text{
     padding-right: 77px;
+}
+
+.ab-text h3{
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 27px;
+    letter-spacing: 0.17px;
+}
+
+.ab-text p{
+    font-size: 13px;
+    line-height: 23px;
+    letter-spacing: 0.19px;
+    margin-top: 30px;
 }
 
 .ab-art{
@@ -126,6 +218,7 @@ li.active{
     font-size: 24px;
     line-height: 29px;
     margin: 15px;
+    letter-spacing: 0.19px;
 }
 
 .ab1, .ab2, .ab3 {
@@ -145,6 +238,37 @@ li.active{
     background-image: url(img/ar3.jpg);
 }
 
+
+
+.serv-top{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 110px;
+}
+
+.serv-title{
+    width: 35%;
+}
+
+.serv-text{
+    width: 45%;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 19px;
+    letter-spacing: 0.2px;
+}
+
+
+.serv-btn{
+    width: 150px;
+}
+
+.serv-btn > p{
+    text-align: end;
+}
+
 .articles{
     display: flex;
     flex-wrap: nowrap;
@@ -158,7 +282,21 @@ li.active{
     padding: 39px 23px;
 }
 
+.articles h3{
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.43px;
+    text-transform: uppercase;
+    margin-top: 25px;
+}
 
+.articles p{
+    font-size: 13px;
+    line-height: 23px;
+    letter-spacing: 0.19px;
+    margin-top: 13px;
+}
 
 .icons{
     height: 75px;
@@ -176,6 +314,31 @@ li.active{
 
 .ic3{
     background-image: url(img/icon_3.png);
+}
+
+
+.teg-in-touch{
+    height: 498px;
+    background-image: url(img/bot_bg.jpg);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.teg-in-touch h3{
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 36px;
+    letter-spacing: 0.15px;
+    width: 350px;
+    margin: 120px auto 35px auto;
+    
+}
+
+.teg-in-touch > div{
+    display: flex;
+    justify-content: center;
 }
 
 .newsletter{
@@ -198,6 +361,7 @@ li.active{
     font-weight:bold;
     padding: 0 70px;
     line-height: 40px;
+    letter-spacing: 0.85px;
 }
 
 .signup input {
@@ -206,17 +370,102 @@ li.active{
     font-size: 14px;
 }
 
+footer > div{
+    height: 299px;
+}
+
 .footer {
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
     align-content: center;
     align-items: stretch;
+    justify-content: space-between;
+
+    font-size: 11px;
+    line-height: 19px;
+    letter-spacing: 0.85px;
+    color: white;
+}
+
+.footer h5{
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 15px;
+    margin-bottom: 12px;
+}
+
+.f-company{
+    width: 250px;
+}
+
+.f-company p{
+    margin-top: 10px;
+}
+
+.f-links {
+    width: 260px;
+    text-transform: uppercase;    
+}
+
+.links-menu{
+    display: flex;
+    justify-content: space-between;
+    font-weight: 600;
+    
+}
+
+.f-contact{
+    width: 140px;
+    line-height: 16px;
+}
+
+.f-socials{
+    width: 86px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 32px;
+}
+
+
+
+.facebook{
+    background-image: url(img/facebook.png);
+}
+
+.twiter{
+    background-image: url(img/twiter.png);
+}
+
+.google{
+    background-image: url(img/google.png);
+}
+
+.f-socials div{
+    width: 12px;
+    height: 12px;
+    background-color:white;
 }
 
 .footer > * {
     margin: 10px;
 }
+
+.copyright{
+    text-align: center;
+    height: 60px;
+    font-size: 11px;
+    line-height: 15px;
+    letter-spacing: 0.85px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+
+}
+
 
 
 
