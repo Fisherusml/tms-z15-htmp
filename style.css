@@ -255,9 +255,10 @@ hr{
 .serv-text{
     width: 45%;
     font-weight: normal;
-    font-size: 12px;
+    font-size: 11px;
     line-height: 19px;
     letter-spacing: 0.2px;
+    padding-right: 20px;
 }
 
 
@@ -305,7 +306,7 @@ hr{
 }
 
 .ic1{
-    background-image: url(img/icon_1.png);
+    background-image: url(img/icon_3.png);
 }
 
 .ic2{
@@ -313,7 +314,7 @@ hr{
 }
 
 .ic3{
-    background-image: url(img/icon_3.png);
+    background-image: url(img/icon_1.png);
 }
 
 
@@ -414,7 +415,10 @@ footer > div{
     display: flex;
     justify-content: space-between;
     font-weight: 600;
-    
+}
+
+.links-menu li{
+    line-height: 25px;
 }
 
 .f-contact{
@@ -446,7 +450,9 @@ footer > div{
 .f-socials div{
     width: 12px;
     height: 12px;
-    background-color:white;
+    /* background:white; */
+    /* filter: grayscale(100%); */
+    filter: brightness(0) invert(1);
 }
 
 .footer > * {
