@@ -360,7 +360,7 @@ hr{
 .signup > p {
     font-size: 22px;
     font-weight:bold;
-    padding: 0 70px;
+    padding-right: 70px;
     line-height: 40px;
     letter-spacing: 0.85px;
 }
@@ -371,11 +371,15 @@ hr{
     font-size: 14px;
 }
 
-footer > div{
-    height: 299px;
+.footer{
+    display: flex;
+    height: 240px;
+    flex-direction: column;
+    justify-content: center;
 }
 
-.footer {
+
+.footer-body {
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
@@ -383,11 +387,21 @@ footer > div{
     align-items: stretch;
     justify-content: space-between;
 
+    
+
     font-size: 11px;
     line-height: 19px;
     letter-spacing: 0.85px;
     color: white;
 }
+
+.footer-body > * {
+    margin: 10px;
+}
+
+/* .footer {
+    display: flex;
+} */
 
 .footer h5{
     text-transform: uppercase;
@@ -455,9 +469,7 @@ footer > div{
     filter: brightness(0) invert(1);
 }
 
-.footer > * {
-    margin: 10px;
-}
+
 
 .copyright{
     text-align: center;
